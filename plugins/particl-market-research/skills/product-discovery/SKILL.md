@@ -8,10 +8,17 @@ When the user wants to find specific products, explore what's selling, discover 
 
 ## Workflow
 
+### Category discovery
+Use `get_product_types` (FREE) to find valid category filter values before searching.
+- Call with no args for root categories
+- Pass `parent_product_type_id` to drill into subcategories
+- Use the resulting `product_type_id` as the `product_type` filter
+
 ### Market-wide search
 Use `search_market_products` to search across ALL tracked companies. Costs 1 credit per product.
-- `keyword`: search by product keywords (e.g., 'recycled', 'wireless')
-- `product_type`: filter by category
+- `title_search`: search by product name (e.g., 'tank top', 'winter jacket') — matches product titles
+- `keyword`: search by product tags (e.g., 'recycled', 'wireless') — searches tags, NOT titles
+- `product_type`: filter by category (use `get_product_types` to find IDs)
 - `brand`: filter by brand name
 - `min_price` / `max_price`: price range filters
 - `sort_by`: `sales_revenue` (default), `sales_volume`, `price`, or `launch_date`
@@ -31,6 +38,7 @@ Both tools support pagination:
 
 ## Tips
 
+- Use `title_search` to find products by name, `keyword` for tag-based filtering
 - Use `sort_by: "launch_date"` with `sort_direction: "desc"` for newest products
 - Use `sort_by: "sales_revenue"` for bestsellers
 - Combine `keyword` with `product_type` for precise filtering
