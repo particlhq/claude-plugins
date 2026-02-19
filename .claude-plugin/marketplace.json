@@ -1,0 +1,12 @@
+{
+  "name": "Particl",
+  "description": "E-commerce market research and competitor intelligence powered by Particl's tracking of thousands of brands.",
+  "icon": "https://app.particl.com/favicon.ico",
+  "publisher": "Particl",
+  "homepage": "https://particl.com",
+  "plugins": [
+    {
+      "path": "plugins/particl-market-research"
+    }
+  ]
+}

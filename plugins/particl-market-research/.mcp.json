@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "particl": {
+      "type": "http",
+      "url": "https://particl-mcp.onrender.com/mcp"
+    }
+  }
+}

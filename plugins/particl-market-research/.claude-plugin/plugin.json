@@ -1,0 +1,10 @@
+{
+  "name": "Particl Market Research",
+  "description": "Search companies, analyze product catalogs, discover top sellers, and get pricing intelligence across e-commerce markets.",
+  "version": "1.0.0",
+  "icon": "https://app.particl.com/favicon.ico",
+  "publisher": "Particl",
+  "homepage": "https://particl.com",
+  "category": "research",
+  "tags": ["e-commerce", "market-research", "competitor-intelligence", "pricing", "analytics"]
+}
