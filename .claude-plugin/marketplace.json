@@ -1,12 +1,13 @@
 {
-  "name": "Particl",
-  "description": "E-commerce market research and competitor intelligence powered by Particl's tracking of thousands of brands.",
-  "icon": "https://app.particl.com/favicon.ico",
-  "publisher": "Particl",
-  "homepage": "https://particl.com",
+  "name": "particl-plugins",
+  "owner": {
+    "name": "Particl"
+  },
   "plugins": [
     {
-      "path": "plugins/particl-market-research"
+      "name": "particl-market-research",
+      "source": "./particl-market-research",
+      "description": "Search companies, analyze product catalogs, discover top sellers, and get pricing intelligence across e-commerce markets."
     }
   ]
 }
